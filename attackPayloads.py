@@ -16,10 +16,6 @@ else:
 
 
 s = requests.Session()
-res = s.get('http://'+host+':8080/acme-webapp-java/')
-cookie = s.cookies.get_dict()
-headers = res.headers
-
 a={
     'Connection': 'keep-alive',
     'Pragma': 'no-cache',
